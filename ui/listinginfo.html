@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css' />
+  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css' />
+  <script href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+  <link href="/ui/font-awesome.min.css" rel="stylesheet" />
+  <link href="/ui/index_style.css" rel="stylesheet" />
+  <link href="/ui/style.css" rel="stylesheet"/>
+    <title>HOMELY</title>
+  </head>
+  
+  <body>
+  <div class="container-fuild"> 
+<div class="navbar-wrapper">
+  <nav class="navbar navbar-default navbar-fixed-top" style="margin-bottom:0px;">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar3">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/"><img src="http://freevector.co/wp-content/uploads/2011/09/48823-home-with-a-heart.png" alt="HOMELY" ></a>
+        <a class="navbar-brand" style="margin-left:0px"href="/"><img src="/ui/Untitled.png" alt="HOMELY"></a>
+      </div>
+      <div id="navbar3" class="navbar-collapse collapse move-me">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/" class="smoothScroll active">Home</a></li>
+		  <li><a href="/viewlisting.html">Search</a></li>
+          <li><a href="/profileinfo">Profile</a></li>
+	
+		  <li><a href="/logout"><span class="glyphicon glyphicon-log-out" style="color:#1b1189"></span> Logout </a></li>
+		  
+          <!-- <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li class="dropdown-header">Nav header</li>
+              <li><a href="#">Separated link</a></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li> -->
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+    <!--/.container-fluid -->
+  </nav>
+</div>	
+
+   <div class="products" style="padding-top:5px">
+	  
+		<div class="card"  style="padding-top:27px">
+		 <a href="/viewlisting.html"><span style="font-weight:500"><i class="fa fa-arrow-left"></i> Go Back </span></a>
+			<div class="container-fliud" style="margin-top:20px">
+				<div class="wrapper row" id="product-show">
+					<div style="min-height:424px;min-width:124px; padding:150px; font-size: 24px;padding-left:40%; font-weight: 300; font-family: 'Open Sans', sans-serif;">
+						
+				<span>Loading data...</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+<section id="credits" class="text-center"style="position: absolute;
+  right: 0;
+  left: 0;padding-top:15px;padding-bottom:15px;background: #729dbf;color: white;">
+	<span class="social" >
+	<a href="https://fb.com/siddharthshubhampal" target="_blank"><i class="fa fa-facebook" style="color:#fdfafa"></i></a>
+	<a href="https://www.linkedin.com/in/siddharth-pal-6b891610b/" target="_blank"><i class="fa fa-linkedin" style="color:#fdfafa"></i></a>
+	<a href="javascript:void(0)"><i class="fa fa-twitter" style="color:#fdfafa"></i></a>
+	<a href="javascript:void(0)"><i class="fa fa-google-plus" style="color:#fdfafa"></i></a>
+	</span><p style="margin-top:-10px">
+	© 2017 Siddharth Shubham Pal | All Rights Reserved.
+</p>
+</section>
+  </body>
+<style>
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+.products {
+  font-family: 'open sans';
+  overflow-x: hidden; }
+
+img {
+  max-width: 100%; }
+
+.preview {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  @media screen and (max-width: 996px) {
+    .preview {
+      margin-bottom: 20px; } }
+
+.preview-pic {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
+
+.preview-thumbnail.nav-tabs {
+  border: none;
+  margin-top: 15px; }
+  .preview-thumbnail.nav-tabs li {
+    width: 18%;
+    margin-right: 2.5%; }
+    .preview-thumbnail.nav-tabs li img {
+      max-width: 100%;
+      display: block; }
+    .preview-thumbnail.nav-tabs li a {
+      padding: 0;
+      margin: 0; }
+    .preview-thumbnail.nav-tabs li:last-of-type {
+      margin-right: 0; }
+
+.tab-content {
+  overflow: hidden; }
+  .tab-content img {
+    width: 100%;
+    -webkit-animation-name: opacity;
+            animation-name: opacity;
+    -webkit-animation-duration: .3s;
+            animation-duration: .3s; }
+
+.card {
+  margin-top: 50px;
+  background: #eee;
+  padding: 3em;
+  line-height: 1.5em; }
+
+@media screen and (min-width: 997px) {
+  .wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; } }
+
+.details {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.colors {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
+
+.product-title, .price, .sizes, .colors {
+  text-transform: UPPERCASE;
+  font-weight: bold; }
+
+.checked, .price span {
+  color: #ff9f1a; }
+
+.product-title, .rating, .product-description, .price, .vote, .sizes {
+  margin-bottom: 15px; }
+
+.product-title {
+  margin-top: 0; }
+
+.size {
+  margin-right: 10px; }
+  .size:first-of-type {
+    margin-left: 40px; }
+
+.color {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  height: 2em;
+  width: 2em;
+  border-radius: 2px; }
+  .color:first-of-type {
+    margin-left: 20px; }
+
+.add-to-cart, .like {
+  background: #ff9f1a;
+  padding: 1.2em 1.5em;
+  border: none;
+  text-transform: UPPERCASE;
+  font-weight: bold;
+  color: #fff;
+  -webkit-transition: background .3s ease;
+          transition: background .3s ease; }
+  .add-to-cart:hover, .like:hover {
+    background: #b36800;
+    color: #fff; }
+
+.not-available {
+  text-align: center;
+  line-height: 2em; }
+  .not-available:before {
+    font-family: fontawesome;
+    content: "\f00d";
+    color: #fff; }
+
+.orange {
+  background: #ff9f1a; }
+
+.green {
+  background: #85ad00; }
+
+.blue {
+  background: #0076ad; }
+
+.tooltip-inner {
+  padding: 1.3em; }
+
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(3);
+            transform: scale(3); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(3);
+            transform: scale(3); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+/*# sourceMappingURL=style.css.map */
+</style>
+
+<script>
+$(document).ready(function() {
+var request1=new XMLHttpRequest();
+request1.onreadystatechange=function(){
+if(request1.readyState==XMLHttpRequest.DONE){
+if(request1.status==200){
+var dbdetail= request1.responseText;
+console.log(dbdetail);
+var span=document.getElementById('product-show');
+span.innerHTML=dbdetail.toString();
+var request2=new XMLHttpRequest();
+request2.onreadystatechange=function(){
+if(request2.readyState==XMLHttpRequest.DONE){
+if(request2.status==200){
+var baddetail= request2.responseText;
+console.log(baddetail);
+var span=document.getElementById('owner-show');
+span.innerHTML=baddetail.toString();
+}
+else if (request2.status===403){alert('Error detected');
+}
+else {
+    alert('Something went wrong on server');
+
+}
+}
+};
+console.log('request sent');
+request2.open('GET','/profiledetailfetch',true);
+request2.send(null);
+}
+else if (request1.status===403){alert('Error detected');
+}
+else {
+    alert('Something went wrong on server');
+
+}
+}
+};
+console.log('request sent');
+request1.open('GET','/listingdetailfetch',true);
+request1.send(null);
+})
+</script>
+	
+<script src="http://junioriit.com/assets/js/jquery-1.10.2.js"></script>
+			<script src="http://junioriit.com/assets/js/bootstrap.js"></script>
+</html>

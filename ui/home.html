@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css' />
+  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css' />
+  <script href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+  <link href="/ui/font-awesome.min.css" rel="stylesheet" />
+  <link href="/ui/index_style.css" rel="stylesheet" />
+  <link href="/ui/style.css" rel="stylesheet"/>
+    <title>HOMELY</title>
+  </head>
+  
+  <body style="background:#f9f9f9">
+  <div class="container-fuild"> 
+<div class="navbar-wrapper">
+  <nav class="navbar navbar-default navbar-fixed-top" style="margin-bottom:0px;">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar3">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/"><img src="http://freevector.co/wp-content/uploads/2011/09/48823-home-with-a-heart.png" alt="HOMELY" ></a>
+        <a class="navbar-brand" style="margin-left:0px"href="/"><img src="/ui/Untitled.png" alt="HOMELY"></a>
+      </div>
+      <div id="navbar3" class="navbar-collapse collapse move-me">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/viewlisting.html">Search Listings</a></li>
+		  <li><a href="/profileinfo"><span class="glyphicon glyphicon-user" style="color:#1b1189;padding-right:3px"></span>Profile</a></li>
+	
+		  <li><a href="/logout"><span class="glyphicon glyphicon-log-out" style="color:#1b1189"></span> Logout </a></li>
+		  
+          <!-- <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li class="dropdown-header">Nav header</li>
+              <li><a href="#">Separated link</a></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li> -->
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+    <!--/.container-fluid -->
+  </nav>
+</div>
+ <br><br>
+      <main >
+     <div class="shareorget-body" >
+		<div class="container" style="z-index:2">
+			<!-- Top Navigation -->
+			<!-- <div class="codrops-top clearfix">
+				<a class="codrops-icon codrops-icon-prev" href="/"><span>Previous page</span></a>
+				
+			</div> -->
+			<header class="codrops-header" style="position:relative; z-index:200">
+				<h1 >Welcome to Homely.com <span>Thousands of homes in just a <a href="javascript:void(0)">click</a></span></h1>	
+			</header>
+			<section>
+			<br>
+				<h2 style="position:relative; z-index:200; color:white">Please select one option</h2>
+				<div class="box" style="position:relative; z-index:200">
+					<!-- progress button -->
+					<div class="progress-button">
+						<button onclick="window.location.href='/listdetailform'"><span>Post property</span></button>
+						
+					</div><!-- /progress-button -->
+					<!-- progress button -->
+					<div class="progress-button">
+						<button onclick="window.location.href='/viewlisting.html'"><span>View Listings</span></button>
+						
+					</div><!-- /progress-button -->
+				</div>
+				
+		</div><!-- /container -->
+		
+		
+	</div>
+      </main>
+</div>	
+
+
+<style>
+.shareorget-body:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+  
+    background-image: url('http://www.architecturebeast.com/wp-content/uploads/2014/08/Top_50_Modern_House_Designs_Ever_Built_featured_on_architecture_beast_17.jpg');
+    background-repeat: no-repeat;
+	opacity:0.89;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+}
+
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700|Montserrat);
+@font-face {
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'codropsicons';
+	src:url('../fonts/codropsicons/codropsicons.eot');
+	src:url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/codropsicons/codropsicons.woff') format('woff'),
+		url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
+		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+}
+
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after { content: ''; display: table; }
+.clearfix:after { clear: both; }
+
+.shareorget-body {
+	background: #f9f9f9;
+	color: #ffffff;
+	font-size: 100%;
+	line-height: 1.25;
+	padding: 25px 0;
+	padding-bottom:0px;
+	border-right: 25px solid #fff;
+	border-left: 25px solid #fff;
+	font-family: 'Lato', Arial, sans-serif;
+}
+
+.shareorget-body ::before,
+.shareorget-body ::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width:0px;
+	height:0px;
+	background: #fff;
+	z-index: -100;
+}
+
+.shareorget-body ::after {
+
+	bottom: 0;
+}
+
+a {
+	color: rgba(0,0,0,0.9);
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover, a:focus {
+	color: rgba(255,255,255,0.6);
+}
+
+.codrops-header {
+	margin: 0 auto;
+	padding: 4em 1em;
+	text-align: center;
+}
+
+.codrops-header h1 {
+	margin: 0;
+	font-weight: 300;
+	font-size: 2.5em;
+	position: relative;
+}
+
+.codrops-header h1 span {
+	display: block;
+	padding: 0 0 0.6em 0.1em;
+	font-size: 0.6em;
+	color: #e4faff;
+}
+
+.codrops-header a {
+	color: green;
+}
+
+.codrops-header a:hover {
+	color: skyblue;
+}
+
+/* To Navigation Style */
+.codrops-top {
+	width: 100%;
+	top: 0;
+	left: 0;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 0.69em;
+	line-height: 2.2;
+	z-index: 1000;
+	padding-top: 3px;
+}
+
+.codrops-top a {
+	display: inline-block;
+	padding: 0 1em;
+	text-decoration: none;
+	letter-spacing: 1px;
+}
+
+.codrops-top span.right {
+	float: right;
+}
+
+.codrops-top span.right a {
+	display: block;
+	float: left;
+}
+
+.codrops-icon:before {
+	margin: 0 4px;
+	text-transform: none;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-family: 'codropsicons';
+	line-height: 1;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+.codrops-icon-drop:before {
+	content: "\e001";
+}
+
+.codrops-icon-prev:before {
+	content: "\e004";
+}
+
+section {
+	text-align: center;
+	position: relative;
+}
+
+section h2 {
+	color: #ccc;
+	font-weight: 400;
+	margin: 2em 0 0;
+	font-size: 1.25em;
+	padding: 0 1em;
+}
+
+.box {
+	width: 100%;
+	max-width: 720px;
+	display: inline-block;
+	padding: 3em 1em;
+}
+
+.box h3 {
+	color: #aaa;
+	font-size: 1em;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	padding: 2em 0;
+}
+
+.related {
+	padding: 10em 0;
+}
+
+.related p {
+	font-size: 1.5em;
+}
+
+.related > a {
+	border: 2px solid rgba(0,0,0,0.3);
+	display: inline-block;
+	text-align: center;
+	margin: 20px 10px;
+	padding: 25px;
+	-webkit-transition: color 0.3s, border-color 0.3s;
+	transition: color 0.3s, border-color 0.3s;
+}
+
+.related a:hover {
+	border-color: rgba(0,0,0,0.6);
+}
+
+.related a img {
+	max-width: 100%;
+	opacity: 0.8;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+
+.related a:hover img,
+.related a:active img {
+	opacity: 1;
+}
+
+.related a h3 {
+	margin: 0;
+	padding: 0.5em 0 0.3em;
+	max-width: 300px;
+	text-align: left;
+}
+
+@media screen and (max-width: 26em) {
+	.codrops-icon span {
+		display: none;
+	}
+}
+
+/* Button container */
+.progress-button {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	width: 45%;
+	min-width: 250px;
+	margin: 10px;
+}
+
+/* Button style */
+.progress-button button {
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+	width: 250px;
+	height: 70px;
+	border: 2px solid #1ECD97;
+	border-radius: 40px;
+	background-color: #1ECD97;
+	color: #fff;
+	
+	letter-spacing: 1px;
+	font-size: 18px;
+	font-family: 'Montserrat', sans-serif;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-transition: background-color 0.3s, color 0.3s, width 0.3s, border-width 0.3s, border-color 0.3s;
+	transition: background-color 0.3s, color 0.3s, width 0.3s, border-width 0.3s, border-color 0.3s;
+}
+
+.progress-button button:hover {
+	border: 2px solid #0e845f;
+	color: #fff;
+}
+
+.progress-button button:focus {
+	outline: none;
+}
+
+/* Text (transition for when returning to initial state) */
+.progress-button button span {
+	-webkit-transition: opacity 0.3s 0.1s;
+	transition: opacity 0.3s 0.1s;
+}
+
+/* Common style of SVGs */
+.progress-button svg {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	pointer-events: none;
+}
+
+.progress-button svg path {
+	opacity: 0;
+	fill: none;
+}
+
+.progress-button svg.progress-circle path {
+	stroke: #1ECD97;
+	stroke-width: 5;
+}
+
+.progress-button svg.checkmark path,
+.progress-button svg.cross path {
+	stroke: #fff;
+	stroke-linecap: round;
+	stroke-width: 4;
+	-webkit-transition: opacity 0.1s;
+	transition: opacity 0.1s;
+}
+
+/* Loading, success and error effects */
+.loading.progress-button button {
+	width: 70px; /* make a circle */
+	border-width: 5px;
+	border-color: #ddd;
+	background-color: transparent;
+	color: #fff;
+}
+
+.loading.progress-button span {
+	-webkit-transition: opacity 0.15s;
+	transition: opacity 0.15s;
+}
+
+.loading.progress-button span,
+.success.progress-button span,
+.error.progress-button span {
+	opacity: 0; /* keep it hidden in all states */
+}
+
+.success.progress-button button,
+.error.progress-button button {
+	-webkit-transition: background-color 0.3s, width 0.3s, border-width 0.3s;
+	transition: background-color 0.3s, width 0.3s, border-width 0.3s;
+}
+
+.success.progress-button button {
+	border-color: #1ECD97;
+	background-color: #1ECD97;
+}
+
+.error.progress-button button {
+	border-color: #FB797E;
+	background-color: #FB797E;
+}
+
+.loading.progress-button svg.progress-circle path,
+.success.progress-button svg.checkmark path,
+.error.progress-button svg.cross path {
+	opacity: 1;
+	-webkit-transition: stroke-dashoffset 0.3s;
+	transition: stroke-dashoffset 0.3s;
+}
+
+/* Optional elastic effect for the width of the button */
+.elastic.progress-button button {
+	-webkit-transition: background-color 0.3s, color 0.3s, width 0.3s cubic-bezier(0.25, 0.25, 0.4, 1), border-width 0.3s, border-color 0.3s;
+	-webkit-transition: background-color 0.3s, color 0.3s, width 0.3s cubic-bezier(0.25, 0.25, 0.4, 1.6), border-width 0.3s, border-color 0.3s;
+	transition: background-color 0.3s, color 0.3s, width 0.3s cubic-bezier(0.25, 0.25, 0.4, 1.6), border-width 0.3s, border-color 0.3s;
+}
+
+.loading.elastic.progress-button button {
+	-webkit-transition: background-color 0.3s, color 0.3s, width 0.3s cubic-bezier(0.6, 0, 0.75, 0.75), border-width 0.3s, border-color 0.3s;
+	-webkit-transition: background-color 0.3s, color 0.3s, width 0.3s cubic-bezier(0.6, -0.6, 0.75, 0.75), border-width 0.3s, border-color 0.3s;
+	transition: background-color 0.3s, color 0.3s, width 0.3s cubic-bezier(0.6, -0.6, 0.75, 0.75), border-width 0.3s, border-color 0.3s;
+}
+
+</style>
+<script src="http://junioriit.com/assets/js/jquery-1.10.2.js"></script>
+			<script src="http://junioriit.com/assets/js/bootstrap.js"></script>
+</html>

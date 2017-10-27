@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css' />
+  <script href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css' />
+  
+  <link href="/ui/font-awesome.min.css" rel="stylesheet" />
+  <link href="/ui/index_style.css" rel="stylesheet" />
+  <link href="/ui/style.css" rel="stylesheet"/>
+    <title>HOMELY</title>
+		<link href="http://www.wudstay.com/resources/pg/css/wud-style.css" rel="stylesheet" type="text/css">
+		  <script href='http://www.wudstay.com/resources/pg/js/pg-custom.js'></script>
+		  <script src="http://www.wudstay.com/resources/pg/js/jquery-1.11.3.min.js" ></script>
+		  <script src="http://www.wudstay.com/resources/pg/js/pg-custom.js"></script>
+  </head>
+  
+  <body>
+  <div class="container-fuild"> 
+<div class="navbar-wrapper">
+  <nav class="navbar navbar-default navbar-fixed-top" style="margin-bottom:0px;">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar3">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/"><img src="http://freevector.co/wp-content/uploads/2011/09/48823-home-with-a-heart.png" alt="HOMELY" ></a>
+        <a class="navbar-brand" style="margin-left:0px"href="/"><img src="/ui/Untitled.png" alt="HOMELY"></a>
+      </div>
+      <div id="navbar3" class="navbar-collapse collapse ">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/" class="smoothScroll active">Home</a></li>
+          <li><a href="/listdetailform">Post Ad</a></li>
+		  <li><a href="/profileinfo">Profile</a></li>
+		  <li><a href="/logout"><span class="glyphicon glyphicon-log-out" style="color:#1b1189"></span> Logout </a></li>
+          <!-- <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li class="dropdown-header">Nav header</li>
+              <li><a href="#">Separated link</a></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li> -->
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+    <!--/.container-fluid -->
+  </nav>
+</div>
+ 
+<section>
+<div class="container-fluid pg-listing-page">
+		<div class="row">
+			<div class="pg-listing-search-panel">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<ol class="breadcrumb">
+								<li><a href="/">Home</a></li>
+								<li class="active">Flat and PG search result </li>
+							</ol>
+							<div class="pg-listing-search">
+								<div id="search-pannel-pg" class="pg-home-search-content">
+									<form method="post" id="frmSearchPg">
+										<div class="input-group">
+											<div class="pg-input-width mandatory">
+												<input type="text" id="pgCity" name="City" class="form-control input-lg" placeholder="City" autocomplete="off" value="">
+												<p class="error-no-message"></p>
+											</div>
+											<div class="pg-input-gender-width optional">
+												<input type="text" id="propCategoryType" name="CategoryType" class="form-control input-lg" placeholder="Category" autocomplete="off" value="">
+											</div>
+
+
+											<div class="input-group-btn input-group-btn-sm">
+												<input type="button" id="searchPgButton" onclick="sortFunction()" class="btn btn-lg btn-info" value="Search">
+											</div>
+											<input type="hidden" id="pgCityId" name="pgCityId" value="">
+											<input type="hidden" id="propCategoryTypeId" name="propCategoryTypeId" value="">
+
+
+										</div>
+									</form>
+									<input type="hidden" id="locationIds" name="locationIds" value="">
+									</div>
+								<div id="searched-pg-city-list" style="display:none;width:43.5%">
+									<ul class="searched-pg-city-list">
+										<li><ul>
+											<li data-uid="Bangalore" data-city="Bangalore"><a href="javascript:void(0);">Bangalore</a></li>
+												<li data-uid="Delhi" data-city="Delhi"><a href="javascript:void(0);">Delhi</a></li>
+												<li data-uid="Mumbai" data-city="Mumbai"><a href="javascript:void(0);">Mumbai</a></li>
+												</ul></li> <li><ul>
+												<li data-uid="Hyderabad" data-city="Hyderabad"><a href="javascript:void(0);">Hyderabad</a></li>
+												<li data-uid="Noida" data-city="Noida"><a href="javascript:void(0);">Noida</a></li>
+												</ul></li> <li><ul>
+																								</ul></li>
+										</ul>
+								</div>
+								<div id="searched-pg-type-list" style="display:none;right:13%;width:43.6%">
+									<ul class="searched-pg-type-list">
+										<li><ul>
+											<li data-uid="PG" data-city="Pg"><a href="javascript:void(0);">Pg</a></li>
+												</ul></li> <li><ul>
+												<li data-uid="Flat" data-city="Flat"><a href="javascript:void(0);">Flat</a></li>
+												</ul></li> <li><ul>
+												<li data-uid="Kothi" data-city="Kothi"><a href="javascript:void(0);">Kothi</a></li>
+												</ul></li> <li><ul>
+												</ul></li>
+										</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+   </section>     
+<!--<div class="right menu">
+  <div class="ui right aligned category search item">
+    <div class="ui inverted black icon input">
+      <input class="prompt" type="text" placeholder="Search Books...">
+      <i class="search link icon"></i>
+    </div>
+    <div class="results"></div>
+  </div>
+</div>-->
+
+<br><br>
+ 
+
+  <div style="padding-right:10%;padding-left:10%">
+    <div class="row">
+    <div class="ui link cards" id="details" style="padding-bottom:75px; padding-top:30px">
+		
+		<div style="text-align:center;display:block;width:100%;min-height:274px"><h2 style="width:100%;padding-top:100px"> Data Loading... Please Wait!</h2></div>
+		
+    </div>
+	</div>
+	</div>
+	
+	      <!--       
+<section id="credits" class="text-center" style="
+    background: #F1F1F1;
+    margin-top: 20px;
+">
+	<span class="social">
+	<a href="#"><i class="fa fa-facebook"></i></a>
+	<a href="#"><i class="fa fa-twitter"></i></a>
+	<a href="#"><i class="fa fa-linkedin"></i></a>
+	<a href="#"><i class="fa fa-google-plus"></i></a>
+	</span><br/>
+	
+	© 2017 www.flairyegg.in | All Rights Reserved.
+	<br/>
+</section> -->
+<section id="credits" class="text-center"style="padding-top:15px;padding-bottom:15px;background: #729dbf;color: white;
+  right: 0;
+  bottom: 0;
+  left: 0;">
+	<span class="social" >
+	<a href="https://fb.com/siddharthshubhampal" target="_blank"><i class="fa fa-facebook" style="color:#fdfafa"></i></a>
+	<a href="https://www.linkedin.com/in/siddharth-pal-6b891610b/" target="_blank"><i class="fa fa-linkedin" style="color:#fdfafa"></i></a>
+	<a href="javascript:void(0)"><i class="fa fa-twitter" style="color:#fdfafa"></i></a>
+	<a href="javascript:void(0)"><i class="fa fa-google-plus" style="color:#fdfafa"></i></a>
+	</span><p style="margin-top:-10px">
+	© 2017 Siddharth Shubham Pal | All Rights Reserved.
+</p>
+</section>
+
+</div>
+  </main>
+          <script>
+          $('.ui.dropdown')
+          .dropdown()
+          ;
+
+          </script>
+<style>
+.row{
+    padding-top:25px;
+}
+
+
+cardx {
+  display: block;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    transition: box-shadow .25s;
+}
+.cardx:hover {
+  box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.img-card {
+  width: 100%;
+  height:200px;
+  border-top-left-radius:2px;
+  border-top-right-radius:2px;
+  display:block;
+    overflow: hidden;
+}
+.img-card img{
+  width: 100%;
+  height: 200px;
+  object-fit:cover;
+  transition: all .25s ease;
+}
+.card-content {
+  padding:15px;
+  text-align:left;
+  width:100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; // This is where the magic happens
+}
+.card-title {
+  margin-top:0px;
+  font-weight: 700;
+  font-size: 1.25em;
+  overflow: hidden;
+  text-overflow: ellipsis; // This is where the magic happens
+}
+.card-title a {
+  color: #000;
+  text-decoration: none !important;
+}
+.lcx{
+	overflow: hidden;
+  text-overflow: ellipsis; // This is where the magic happens
+}
+
+.card-read-more {
+  border-top: 1px solid #D4D4D4;
+}
+.card-read-more a {
+  text-decoration: none !important;
+  padding:10px;
+  font-weight:600;
+  text-transform: uppercase
+}
+
+.pg-listing-search-panel{background: #f1f1f1;border-top: 4px solid #944aa2;padding-bottom: 23px;}
+.pg-listing-search-panel ol.breadcrumb {background: transparent;font-size: 18px;font-family: 'Lato', sans-serif;font-weight: 300;color: #000000;padding: 10px 0;margin: 0;}
+.pg-listing-search-panel ol.breadcrumb a {color: #000000; text-decoration: none;}
+.pg-listing-search-panel .breadcrumb>.active {color: #00000;}
+.pg-listing-search {width: 100%; float: left; position: relative;}
+.pg-listing-search .pg-home-search-content{}
+
+.listing-top, .freq-top{width: 100%;float: left;padding: 28px 0;}
+.listing-topl>h1 {margin-top: 0; margin-bottom: 0; display: inline-block; font-weight: 300; font-size: 24px;}
+.listing-topl>h3 {margin-top: 0; margin-bottom: 0;}
+.listing-topl, .freq-topl {float: left;}
+.listing-topl h3, .freq-topl h3{display: inline-block; font-weight: 300;}
+.listing-topr {float: right;display: inline-block;}
+.sort-by, .filter-by{position: relative;float: left;width: 125px;height: 20px;margin: 0;}
+.sort-by:after, .filter-by:before{position: absolute;content: "";right: 12px;top: 8px;display: inline-block;width: 0;height: 0;border-left: 5px solid transparent;border-right: 5px solid transparent;border-top: 6px solid #000000;}
+.listing-topr select{border: 0;border-right: 1px solid #c5c5c5;border-left: 1px solid #c5c5c5;-webkit-appearance: none;-moz-appearance: none;-ms-appearance: none;-o-appearance: none;background: none;padding: 0 5px;width: 126px;height: 20px;text-align: left;font-size: 16px;line-height: 20px;font-weight: 300;color: #000000;position: relative;outline: none; border-radius: 0;}
+
+
+.pg-home-search {position: relative;float: left;width: 100%;display: block;margin: 90px 0 0 0;}
+.pg-home-search-content{width: 100%;float: left;}
+.pg-input-width{width: 50%; float: left;}
+.pg-input-gender-width{width: 50%; float: left; }
+.pg-home-search-content input[type="text"]{font-weight: 300;width: 100%;height: 56px;border: 0;border-right: 1px solid #ebebeb;box-shadow: none;}
+.pg-input-gender-width input[type="text"]{border-right: 0;}
+.pg-home-search-content input[type="button"]{width: 150px; height: 56px; font-size: 24px; font-weight: 300;}
+.btn-info{background: #ff8400;    border: 1px solid #ff8400; border-radius: 0;}
+.btn-info:hover, .btn-info:active, .btn-info:focus, .btn-info.active.focus, .btn-info.active:focus, .btn-info.active:hover, .btn-info:active.focus, .btn-info:active:focus, .btn-info:active:hover{background: #ff9019; border-color:#ff9019;}
+.pg-home-search-filter h1{color: #fff;font-weight: 300; font-size: 45px; margin-top: 70px; margin-bottom: 30px;     text-shadow: 0 1px 6px #000000;}
+
+</style>
+
+          <script type="text/javascript">
+function myFunction(myMessage) {
+  var request=new XMLHttpRequest();
+
+request.onreadystatechange=function(){
+  if(request.readyState==XMLHttpRequest.DONE){
+      if(request.status==200){
+           //alert('your msg'+myMessage);
+           window.open('/listinginfo',"_self");
+      }else if (request.status===403){alert('Forbidden Request');
+      }
+      else if(request.status===500){
+              alert('Not logged in/Something went wrong on server');
+
+          }else if(request.status===404){
+              alert('Invalid Credentials');
+          }
+      }
+  //not done ignore it
+};
+request.open('GET','/intro/'+myMessage,true);
+
+request.setRequestHeader('Content-type','application/json');
+request.send(JSON.stringify({Book_id: myMessage}));
+
+}
+</script>
+
+
+<script type="text/javascript">
+function sortFunction() {
+var myMessage= document.getElementById("propCategoryType").value;
+var myMessage2= "";
+myMessage2 = document.getElementById("pgCity").value;
+var request5=new XMLHttpRequest();
+
+request5.onreadystatechange=function(){
+if(request5.readyState==XMLHttpRequest.DONE){
+if(request5.status==200){
+  var dbbad= request5.responseText;
+  console.log("db is"+dbbad);
+
+  var span=document.getElementById('details');
+  span.innerHTML=dbbad.toString();
+}else if (request5.status===403){alert('Forbidden Request');
+}
+else if(request5.status===500){
+    alert('Not logged in/Something went wrong on server');
+
+}else if(request5.status===404){
+    alert('Invalid Credentials');
+}
+}
+//not done ignore it
+};
+request5.open('GET','/sort/'+myMessage+'/'+myMessage2,true);
+
+request5.setRequestHeader('Content-type','application/json');
+request5.send(null);
+
+}
+</script>
+
+
+          <script>
+        $(document).ready(function() {
+ var request1=new XMLHttpRequest();
+request1.onreadystatechange=function(){
+if(request1.readyState==XMLHttpRequest.DONE){
+    if(request1.status==200){
+     var dbdetail= request1.responseText;
+     console.log(dbdetail);
+    var span=document.getElementById('details');
+  span.innerHTML=dbdetail.toString();
+
+
+    }
+    else if (request1.status===403){alert('Error detected');
+    }
+    else {
+            alert('Something went wrong on server');
+
+        }
+    }
+};
+    console.log('request sent');
+    request1.open('GET','/getimg',true);
+    request1.send(null);
+});
+          </script>
+		   <script src="http://junioriit.com/assets/js/jquery-1.10.2.js"></script>
+			<script src="http://junioriit.com/assets/js/bootstrap.js"></script>
+</html>

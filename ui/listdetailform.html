@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css' />
+  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css' />
+  <script href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+  <link href="/ui/font-awesome.min.css" rel="stylesheet" />
+  <link href="/ui/index_style.css" rel="stylesheet" />
+  <link href="/ui/style.css" rel="stylesheet"/>
+    <title>HOMELY</title>
+  </head>
+  
+  <body>
+  <div class="container-fuild"> 
+<div class="navbar-wrapper">
+  <nav class="navbar navbar-default navbar-fixed-top" style="margin-bottom:0px;">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar3">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/"><img src="http://freevector.co/wp-content/uploads/2011/09/48823-home-with-a-heart.png" alt="HOMELY" ></a>
+        <a class="navbar-brand" style="margin-left:0px"href="/"><img src="/ui/Untitled.png" alt="HOMELY"></a>
+      </div>
+      <div id="navbar3" class="navbar-collapse collapse move-me">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/" class="smoothScroll active">Home</a></li>
+		  <li><a href="/viewlisting.html">Search</a></li>
+          <li><a href="/profileinfo">Profile</a></li>
+
+		  <li><a href="/logout"><span class="glyphicon glyphicon-log-out" style="color:#1b1189"></span> Logout </a></li>
+		  
+          <!-- <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li class="dropdown-header">Nav header</li>
+              <li><a href="#">Separated link</a></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li> -->
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+    <!--/.container-fluid -->
+  </nav>
+</div>	
+<br><br>
+		<div class="container">
+		
+		<h1 style="text-align:center;padding-top:40px; font-size:24px; font-weight:600">
+            PROPERTY DETAILS
+        </h1>
+		
+        <div >
+          <form class="ui form" action="/uploadfile" method="post" enctype="multipart/form-data">
+          <label  >Listing Name</label>
+          <input type="text" name="Ad_name" placeholder="eg:  A New flat in sector 77 " pattern=".{5,}" required/><br>
+          <label >Upload recent pic of property</label><br>
+      <input  type='file' name="Ad_pic" accept="image/*" onchange="readURL(this);" style="font-size:14px" required/>
+          <img id="uploadimg" src="/ui/images.png" alt="your image"  style="padding-top:2px"/><br>
+          <label >Listing Type</label></br>
+          <div class="ui search selection dropdown " id="Category">
+        <input type="hidden" name="Category" >
+        <i class="dropdown icon"></i>
+        <div class="default text"  style="font-size:16px">Property Type</div><br>
+        <div class="menu">
+          <div class="item" data-value="Flat">Flat </div>
+                     <div class="item" data-value="Pg">PG</div>
+					 <div class="item" data-value="Kothi">Kothi</div>
+        </div>
+      </div><br>
+      <label >Location</label></br>
+      <div class="ui search selection dropdown " id="location">
+    <input type="hidden" name="location" >
+    <i class="dropdown icon"></i>
+    <div class="default text"  style="font-size:16px">Property Location</div>
+    <div class="menu">
+				 <div class="item" data-value="Delhi" >Delhi </div>
+                 <div class="item" data-value="Noida">Noida</div>
+                 <div class="item" data-value="Mumbai">Mumbai</div>
+                 <div class="item" data-value="Bangalore">Bangalore</div>
+                 <div class="item" data-value="Hyderabad">Hyderabad</div>
+    </div>
+  </div><br>
+  
+          <label>Description</label>
+          <textarea class="" name="Desc" placeholder="Description" style="font-size:16px" required></textarea><br>
+		<label >Price</label>
+          <input type="number" min="0" name="Price" placeholder="$4000" style="padding-bottom:5px;padding-top5px;font-size:16px" required><br>
+        
+         <div style="padding-top:30px; padding-bottom:60px;">
+           
+		  <button class="ui inverted blue butto button" class="labeled icon button" tabindex="0" style="height: 42px;width: 128px; margin: -20px -60px; position:relative; top:50%; left:50%; padding-bottom: 0px;padding-top: 0px;font-size: 14px;padding-left: 10px;padding-right: 10px;"><i class="sign in icon"></i>
+          Submit</button>
+		  </div>
+          </form>
+        </div>
+        </div>
+	</div>	
+<section id="credits" class="text-center"style="padding-top:15px;padding-bottom:15px;background: #729dbf;color: white;">
+	<span class="social" >
+	<a href="https://fb.com/siddharthshubhampal" target="_blank"><i class="fa fa-facebook" style="color:#fdfafa"></i></a>
+	<a href="https://www.linkedin.com/in/siddharth-pal-6b891610b/" target="_blank"><i class="fa fa-linkedin" style="color:#fdfafa"></i></a>
+	<a href="javascript:void(0)"><i class="fa fa-twitter" style="color:#fdfafa"></i></a>
+	<a href="javascript:void(0)"><i class="fa fa-google-plus" style="color:#fdfafa"></i></a>
+	</span><p style="margin-top:-10px">
+	© 2017 Siddharth Shubham Pal | All Rights Reserved.
+</p>
+</section>
+          </body>
+        <script>
+        $('#location').dropdown();
+          $('#Category').dropdown();
+$('#multi-select')
+  .dropdown()
+;
+        </script>
+         <script>
+          function readURL(input) {
+      if (input.files && input.files[0]) {
+          var reader = new FileReader();
+
+          reader.onload = function (e) {
+              $('#uploadimg')
+                  .attr('src', e.target.result)
+                  .width(200)
+                  .height(200);
+          };
+          if(input.files[0].size>1048576)
+alert('file size should be less than 1 MB');
+          reader.readAsDataURL(input.files[0]);
+      }
+  }
+</script>
+<script>
+$('.ui.form')
+.form({
+fields: {
+Adname     : 'empty',
+location   : 'empty'
+Ad_pic     :'empty',
+Price  :'empty',
+Category  :'empty'
+}
+})
+;
+</script>
+<style>
+.ui.selection.dropdown {
+min-width: 20em;
+}
+.container form {
+	margin-right:20%;
+	margin-left:20%
+}
+.ui.form input:not([type]), .ui.form input[type=text], .ui.form input[type=email], .ui.form input[type=search], .ui.form input[type=password], .ui.form input[type=date], .ui.form input[type=datetime-local], .ui.form input[type=tel], .ui.form input[type=time], .ui.form input[type=file], .ui.form input[type=url], .ui.form input[type=number]{
+line-height:2em}
+.form>label{
+font-size:1.7em; font-weight:300;
+padding-top:10px;
+margin-bottom:0}
+.ui.form input:not([type]), .ui.form input[type=text], .ui.form input[type=email], .ui.form input[type=search], .ui.form input[type=password], .ui.form input[type=date], .ui.form input[type=datetime-local], .ui.form input[type=tel], .ui.form input[type=time], .ui.form input[type=file], .ui.form input[type=url], .ui.form input[type=number] {
+padding:0px 20px;}
+.ui.form input[type="text"]
+{
+    font-size:20px;
+}
+.ui.form input{
+	width: 300px;
+    padding: 0 10px;}
+.ui.form input{
+padding:0px}
+.ui.form input::-webkit-input-placeholder {
+    font-size: 0.8em;
+    line-height: 3;
+}
+dropdown::-webkit-input-placeholder {
+    font-size: 0.6em;
+   
+}
+@media only screen and (max-width: 560px) {
+	.container form {
+	margin-right:0%;
+	margin-left:0%
+}
+	form{
+	padding:5px}
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+</style>
+ <script src="http://junioriit.com/assets/js/jquery-1.10.2.js"></script>
+			<script src="http://junioriit.com/assets/js/bootstrap.js"></script>    
+
+</html>
